@@ -15,7 +15,7 @@ public class FirstTest {
     @Test
 	public void test() {
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
-      ChromeOption option=new ChromeOption();
+      ChromeOptions option=new ChromeOptions();
       option.addArguments("headless");
 		WebDriver driver=new ChromeDriver(option);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
