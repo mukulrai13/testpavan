@@ -17,7 +17,7 @@ public class FirstTest {
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
       ChromeOption option=new ChromeOption();
       option.addArguments("headless");
-		driver=new ChromeDriver(option);
+		WebDriver driver=new ChromeDriver(option);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		driver.manage().window().maximize();
 		driver.get("https://dev.productively.app/login");
