@@ -15,17 +15,17 @@ public class FirstTest {
     @Test
 	public void test() {
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
-     options = Options()
-options.add_argument("--headless")
-options.add_argument("window-size=1400,1500")
-options.add_argument("--disable-gpu")
-options.add_argument("--no-sandbox")
-options.add_argument("start-maximized")
-options.add_argument("enable-automation")
-options.add_argument("--disable-infobars")
-options.add_argument("--disable-dev-shm-usage")
+     options = Options();
+options.add_argument("--headless");
+options.add_argument("window-size=1400,1500");
+options.add_argument("--disable-gpu");
+options.add_argument("--no-sandbox");
+options.add_argument("start-maximized");
+options.add_argument("enable-automation");
+options.add_argument("--disable-infobars");
+options.add_argument("--disable-dev-shm-usage");
 
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(options=options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 		driver.manage().window().maximize();
 		driver.get("https://dev.productively.app/login");
