@@ -15,7 +15,7 @@ public class FirstTest {
     @Test
 	public void test() {
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
-     options = Options();
+     ChromeOptions options = new ChromeOptions();
 options.add_argument("--headless");
 options.add_argument("window-size=1400,1500");
 options.add_argument("--disable-gpu");
