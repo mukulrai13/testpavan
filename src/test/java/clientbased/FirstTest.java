@@ -32,8 +32,7 @@ driver = webdriver.Chrome(options=options);
 		driver.findElement(By.xpath("//input[@name='email']")).sendKeys("clientbasedtest@gmail.com");
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Testing@13");
 		driver.findElement(By.xpath("//button[text()='Log In']")).click();
-// 		AssertJUnit.assertEquals(driver.findElement(By.tagName("h4")).getText(), "Start Tracking Time");
-// 		System.out.println(driver.findElement(By.tagName("h4")).getText());
+
 	}
 
 //    @Test(groups = { "demo" })	
